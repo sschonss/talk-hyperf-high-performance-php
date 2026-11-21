@@ -1,0 +1,10 @@
+{
+  "name": "hyperf-high-performance-php-slides",
+  "private": true,
+  "scripts": {
+    "dev": "marp --no-stdin -s .",
+    "build": "marp --no-stdin slides.md -o dist/index.html && mkdir -p dist && cp -R assets dist/",
+    "pdf": "marp --no-stdin slides.md --pdf -o dist/hyperf-high-performance-php.pdf",
+    "pptx": "marp --no-stdin slides.md --pptx -o dist/hyperf-high-performance-php.pptx"
+  }
+}
